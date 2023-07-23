@@ -48,21 +48,21 @@ const Banner = () => {
             },
             modes: {
               push: {
-                quantity: 4,
+                quantity: 1,
               },
               repulse: {
                 distance: 200,
-                duration: 0.5,
+                duration: 0.3,
               },
             },
           },
           particles: {
             color: {
-              value: "#ffffff",
+              value: "#7e7e7e",
             },
             links: {
-              color: "#ffffff",
-              distance: 150,
+              color: "#7e7e7e",
+              distance: 100,
               enable: true,
               opacity: 0.5,
               width: 1,
@@ -83,7 +83,7 @@ const Banner = () => {
             number: {
               density: {
                 enable: true,
-                area: 800,
+                area: 600,
               },
               value: 80,
             },
