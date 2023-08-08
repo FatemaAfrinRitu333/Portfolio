@@ -1,0 +1,70 @@
+.project_image1 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 400px;
+}
+
+.project_image1:hover {
+    background-position: bottom;
+    transition: ease-in 2.5s;
+}
+
+.outer-flip-card-box {
+    height: 100%;
+    width: 100%;
+    perspective: 10000px;
+}
+
+.inner-flip-card-box {
+    position: relative;
+    /* width: 100%; */
+    /* height: 100%; */
+    /* text-align: center; */
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    display: flex;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+
+/* .flip-card-button:active .inner-flip-card-box{
+    transform: rotateY(180deg);
+} */
+
+.flip-exit {
+    transform: rotateY(0deg);
+}
+
+.flip-exit-active {
+    transform: rotateY(180deg);
+    transition: transform 300ms;
+}
+
+.flip-exit-done {
+    transform: rotateY(180deg);
+}
+
+.flip-enter {
+    transform: rotateY(180deg);
+}
+
+.flip-enter-active {
+    transform: rotateY(0deg);
+    transition: transform 300ms;
+}
+
+.flip-enter-done {
+    transform: rotateY(0deg);
+}
